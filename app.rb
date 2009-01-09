@@ -60,4 +60,5 @@ private
   def realm
     realm = "#{request.scheme}://#{request.host}"
     realm << ":#{request.port}" unless request.port == 80
+    realm
   end
